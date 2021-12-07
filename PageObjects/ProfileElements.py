@@ -1,0 +1,11 @@
+#Profile Page Element
+clk_prof = "xpath://*[@id='dropdownMenu2']"
+clk_myAcc = "xpath://*[@id='js--main-header']/div/div/div[3]/div/div[3]/div/a[1]"
+clk_cngInfo = "xpath://*[@id='js--edit-personal']"
+clk_myOrd = "xpath:/html/body/header/div/div/div/div/div[3]/div/div[3]/div/a[2]"
+clk_myLst = "xpath:/html/body/header/div/div/div/div/div[3]/div/div[3]/div/a[3]"
+clk_btn = "xpath://*[@id='my-account']/div/div/div[2]/main/section/div[1]/a/button"
+clk_myWsh = "xpath:/html/body/header/div/div/div/div/div[3]/div/div[3]/div/a[4]"
+clk_rtRvw = "xpath:/html/body/header/div/div/div/div/div[3]/div/div[3]/div/a[5]"
+clk_myPnt = "xpath:/html/body/header/div/div/div/div/div[3]/div/div[3]/div/a[6]"
+clk_signOut = "xpath:/html/body/header/div/div/div/div/div[3]/div/div[3]/div/a[7]"

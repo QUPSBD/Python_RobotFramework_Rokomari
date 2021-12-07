@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211207 22:28:00.958" rpa="false" schemaversion="2">
+<suite id="s1" name="SignupTest" source="C:\Users\mreva\PycharmProjects\POMPractice\TestCases\SignupTest.robot">
+<test id="s1-t1" name="Website_TC_002(login)">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211207 22:28:01.381" level="INFO">Opening browser 'chrome' to base url 'https://www.rokomari.com/book'.</msg>
+<status status="PASS" starttime="20211207 22:28:01.380" endtime="20211207 22:28:15.682"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211207 22:28:15.683" endtime="20211207 22:28:15.932"/>
+</kw>
+<kw name="Click Signin Link" library="LoginKeywords">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${clk_signIn}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211207 22:28:15.941" level="INFO">Clicking link 'xpath://*[@id='js--main-header']/div/div/div[3]/div/div[2]/a'.</msg>
+<status status="PASS" starttime="20211207 22:28:15.940" endtime="20211207 22:28:19.063"/>
+</kw>
+<status status="PASS" starttime="20211207 22:28:15.940" endtime="20211207 22:28:19.064"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,250)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20211207 22:28:19.066" level="INFO">Executing JavaScript:
+window.scrollTo(0,250)
+Without any arguments.</msg>
+<status status="PASS" starttime="20211207 22:28:19.065" endtime="20211207 22:28:19.104"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 second</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211207 22:28:22.107" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211207 22:28:19.105" endtime="20211207 22:28:22.107"/>
+</kw>
+<kw name="Click Signup Link" library="SignuppageKeywords">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${clk_signUp}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211207 22:28:22.108" level="INFO">Clicking link 'xpath://*[@id='js--login-form']/div[2]/p/a'.</msg>
+<status status="PASS" starttime="20211207 22:28:22.108" endtime="20211207 22:28:22.207"/>
+</kw>
+<status status="PASS" starttime="20211207 22:28:22.107" endtime="20211207 22:28:22.207"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,350)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20211207 22:28:22.213" level="INFO">Executing JavaScript:
+window.scrollTo(0,350)
+Without any arguments.</msg>
+<status status="PASS" starttime="20211207 22:28:22.213" endtime="20211207 22:28:22.243"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 second</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211207 22:28:25.244" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211207 22:28:22.243" endtime="20211207 22:28:25.244"/>
+</kw>
+<kw name="Enter FullName" library="SignuppageKeywords">
+<arg>${fullname}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_fullName}</arg>
+<arg>${fullname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 22:28:25.245" level="INFO">Typing text 'MD. Moshiur Rahman Emon' into text field 'name=nm'.</msg>
+<status status="PASS" starttime="20211207 22:28:25.245" endtime="20211207 22:28:25.370"/>
+</kw>
+<status status="PASS" starttime="20211207 22:28:25.244" endtime="20211207 22:28:25.370"/>
+</kw>
+<kw name="Enter Email" library="SignuppageKeywords">
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 22:28:25.372" level="INFO">Typing text 'Emon12345@gmail.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20211207 22:28:25.371" endtime="20211207 22:28:25.478"/>
+</kw>
+<status status="PASS" starttime="20211207 22:28:25.371" endtime="20211207 22:28:25.478"/>
+</kw>
+<kw name="Enter PhoneNumber" library="SignuppageKeywords">
+<arg>${phonenumber}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_num}</arg>
+<arg>${phonenumber}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 22:28:25.480" level="INFO">Typing text '+8801674737148' into text field 'name=phone'.</msg>
+<status status="PASS" starttime="20211207 22:28:25.479" endtime="20211207 22:28:25.590"/>
+</kw>
+<status status="PASS" starttime="20211207 22:28:25.479" endtime="20211207 22:28:25.590"/>
+</kw>
+<kw name="Enter Password2" library="SignuppageKeywords">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txt_pwd}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211207 22:28:25.592" level="INFO">Typing text 'Emon12345' into text field 'name=pwd'.</msg>
+<status status="PASS" starttime="20211207 22:28:25.591" endtime="20211207 22:28:25.696"/>
+</kw>
+<status status="PASS" starttime="20211207 22:28:25.591" endtime="20211207 22:28:25.697"/>
+</kw>
+<kw name="Check ReCaptcha" library="SignuppageKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clk_recap}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211207 22:28:25.698" level="INFO">Clicking element 'xpath://*[@id='recaptcha-anchor']/div[1]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211207 22:28:25.858" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-45.png"&gt;&lt;img src="selenium-screenshot-45.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211207 22:28:25.715" endtime="20211207 22:28:25.858"/>
+</kw>
+<msg timestamp="20211207 22:28:25.891" level="FAIL">Element with locator 'xpath://*[@id='recaptcha-anchor']/div[1]' not found.</msg>
+<status status="FAIL" starttime="20211207 22:28:25.697" endtime="20211207 22:28:25.891"/>
+</kw>
+<status status="FAIL" starttime="20211207 22:28:25.697" endtime="20211207 22:28:25.892"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211207 22:28:25.892" endtime="20211207 22:28:25.892"/>
+</kw>
+<kw name="Click SignUp Button" library="SignuppageKeywords">
+<status status="NOT RUN" starttime="20211207 22:28:25.893" endtime="20211207 22:28:25.893"/>
+</kw>
+<status status="FAIL" starttime="20211207 22:28:01.379" endtime="20211207 22:28:25.893">Element with locator 'xpath://*[@id='recaptcha-anchor']/div[1]' not found.</status>
+</test>
+<status status="FAIL" starttime="20211207 22:28:00.960" endtime="20211207 22:28:25.895"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="SignupTest">SignupTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
